@@ -1,8 +1,8 @@
 #pip install python-dotenv
 #pip install langchain-openai
 
-from dotenv import load_dotenv
-load_dotenv()
+# from dotenv import load_dotenv
+# load_dotenv()
 
 #python main.py -> api키 불러오기
 
@@ -11,15 +11,15 @@ load_dotenv()
 from langchain_openai import ChatOpenAI
 chat_model = ChatOpenAI()
 
-result = chat_model.invoke("안녕!")
-#print(result.content)
+# result = chat_model.invoke("안녕!")
+# print(result.content)
 #출력할 때는 위의 ...에 terminal 만들고 거기에 python main.py 입력
 #출력결과: 안녕하세요! 무엇을 도와드릴까요?
 
 
 #우리는 시를 작성하려고 함
-result = chat_model.invoke("AI에 대한 시를 써줘.")
-#print(result.content)
+# result = chat_model.invoke("AI에 대한 시를 써줘.")
+# print(result.content)
 #출력결과:
 #인공지능은 바로 눈 앞에
 #끊임없이 발전하며 우리를 놀라게 해
@@ -34,9 +34,9 @@ result = chat_model.invoke("AI에 대한 시를 써줘.")
 
 
 #사용자가 주제를 주면 거기에 맞는 시를 써주는 프로그램 만들어보기!
-subject = "AI"
-result = chat_model.invoke(subject + "에 대한 시를 써줘.")
-#print(result.content)
+# subject = "AI"
+# result = chat_model.invoke(subject + "에 대한 시를 써줘.")
+# print(result.content)
 #출력하면 위와 같이 AI에 대한 시를 써줌.
 
 
